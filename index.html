@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ROLLDA – 스마트 헤어 스타일링</title>
+  <meta name="description" content="롤다(ROLLDA)는 AI 기반 스마트 헤어 스타일링 기기와 앱 서비스를 제공합니다." />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif;
+      background: #fff;
+      color: #333;
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid #f0f0f0;
+      padding: 0 24px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 800;
+      color: #E89968;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #666;
+      font-size: 14px;
+      margin-left: 24px;
+    }
+
+    nav a:hover { color: #E89968; }
+
+    .hero {
+      text-align: center;
+      padding: 80px 24px 60px;
+      background: linear-gradient(160deg, #fff7f3 0%, #fff 60%);
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: #fff0e6;
+      color: #E89968;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+
+    .hero h1 {
+      font-size: clamp(28px, 5vw, 48px);
+      font-weight: 800;
+      color: #222;
+      line-height: 1.25;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span { color: #E89968; }
+
+    .hero p {
+      font-size: 16px;
+      color: #666;
+      line-height: 1.8;
+      max-width: 480px;
+      margin: 0 auto 36px;
+    }
+
+    .badge-row {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .store-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #222;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .store-badge.outline {
+      background: #fff;
+      color: #222;
+      border: 1.5px solid #ddd;
+    }
+
+    .features {
+      padding: 64px 24px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      text-align: center;
+      font-size: 12px;
+      font-weight: 700;
+      color: #E89968;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: clamp(22px, 4vw, 32px);
+      font-weight: 800;
+      color: #222;
+      margin-bottom: 48px;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .feature-card {
+      background: #fff;
+      border: 1px solid #f0f0f0;
+      border-radius: 16px;
+      padding: 28px 24px;
+      transition: box-shadow 0.2s;
+    }
+
+    .feature-card:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.07); }
+
+    .feature-icon {
+      width: 48px;
+      height: 48px;
+      background: #fff0e6;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      margin-bottom: 16px;
+    }
+
+    .feature-card h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #222;
+      margin-bottom: 8px;
+    }
+
+    .feature-card p {
+      font-size: 13px;
+      color: #888;
+      line-height: 1.7;
+    }
+
+    .contact-section {
+      background: #fff7f3;
+      padding: 56px 24px;
+      text-align: center;
+    }
+
+    .contact-section h2 {
+      font-size: 24px;
+      font-weight: 800;
+      color: #222;
+      margin-bottom: 12px;
+    }
+
+    .contact-section p { font-size: 14px; color: #666; margin-bottom: 8px; }
+
+    .contact-section a {
+      color: #E89968;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer {
+      background: #fff;
+      border-top: 1px solid #f0f0f0;
+      padding: 24px;
+      text-align: center;
+    }
+
+    footer p { font-size: 12px; color: #aaa; line-height: 1.8; }
+
+    footer a { color: #aaa; text-decoration: none; }
+    footer a:hover { color: #E89968; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">ROLLDA</div>
+    <nav>
+      <a href="#features">기능</a>
+      <a href="#contact">문의</a>
+      <a href="privacy/">개인정보처리방침</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-badge">SMART HAIR STYLING</div>
+    <h1>매일 완벽한<br /><span>앞머리 스타일링</span></h1>
+    <p>롤다 스마트 기기와 AI 앱이 함께<br />당신만의 헤어 스타일을 완성합니다.</p>
+    <div class="badge-row">
+      <a class="store-badge" href="#">
+        ▶ Google Play
+      </a>
+      <a class="store-badge outline" href="#">
+        ⬇ App Store
+      </a>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="section-label">Features</div>
+    <h2 class="section-title">롤다가 제공하는 것들</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">📡</div>
+        <h3>블루투스 기기 제어</h3>
+        <p>롤다 기기와 무선으로 연결해 버튼 하나로 히팅을 시작하고 배터리 상태를 실시간으로 확인하세요.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">✨</div>
+        <h3>AI 헤어 스타일 추천</h3>
+        <p>얼굴형, 이마 타입, 모발 굵기를 분석해 나에게 딱 맞는 앞머리 스타일을 AI가 추천합니다.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🎨</div>
+        <h3>심플한 디자인</h3>
+        <p>매일 사용하는 스타일링 루틴에 맞게 설계된 직관적인 인터페이스로 누구나 쉽게 사용합니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <h2>문의하기</h2>
+    <p>서비스 이용 및 제품에 관한 문의는 아래 이메일로 연락 주세요.</p>
+    <p><a href="mailto:contact@rollda.co.kr">contact@rollda.co.kr</a></p>
+  </section>
+
+  <footer>
+    <p>
+      &copy; 2025 (주)롤다. All rights reserved.<br />
+      <a href="privacy/">개인정보처리방침</a>
+    </p>
+  </footer>
+
+</body>
+</html>

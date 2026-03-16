@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>개인정보 처리방침 – ROLLDA</title>
+  <meta name="description" content="롤다(ROLLDA) 개인정보 처리방침" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif;
+      background: #fff;
+      color: #333;
+      line-height: 1.8;
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid #f0f0f0;
+      padding: 0 24px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 800;
+      color: #E89968;
+      letter-spacing: 2px;
+      text-decoration: none;
+    }
+
+    .back-link {
+      font-size: 13px;
+      color: #888;
+      text-decoration: none;
+    }
+
+    .back-link:hover { color: #E89968; }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .page-title {
+      font-size: 28px;
+      font-weight: 800;
+      color: #222;
+      margin-bottom: 8px;
+    }
+
+    .effective-date {
+      font-size: 13px;
+      color: #999;
+      margin-bottom: 40px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .intro {
+      font-size: 14px;
+      color: #555;
+      background: #fff7f3;
+      border-left: 3px solid #E89968;
+      padding: 16px 20px;
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #222;
+      margin-bottom: 12px;
+      padding-top: 32px;
+    }
+
+    h2:first-of-type { padding-top: 0; }
+
+    p, li {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 8px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 8px;
+    }
+
+    li { margin-bottom: 4px; }
+
+    .divider {
+      border: none;
+      border-top: 1px solid #f0f0f0;
+      margin: 32px 0;
+    }
+
+    .company-box {
+      background: #f9f9f9;
+      border-radius: 12px;
+      padding: 24px;
+      margin-top: 40px;
+    }
+
+    .company-box h3 {
+      font-size: 14px;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 12px;
+    }
+
+    .company-box p { font-size: 13px; color: #666; margin-bottom: 4px; }
+    .company-box a { color: #E89968; text-decoration: none; }
+
+    footer {
+      border-top: 1px solid #f0f0f0;
+      padding: 24px;
+      text-align: center;
+    }
+
+    footer p { font-size: 12px; color: #aaa; }
+    footer a { color: #aaa; text-decoration: none; }
+    footer a:hover { color: #E89968; }
+
+    /* 언어 토글 */
+    .lang-toggle {
+      display: flex;
+      gap: 8px;
+    }
+
+    .lang-btn {
+      border: 1px solid #ddd;
+      background: #fff;
+      color: #888;
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .lang-btn.active {
+      background: #E89968;
+      border-color: #E89968;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    [data-lang="en"] { display: none; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a class="logo" href="../">ROLLDA</a>
+    <div style="display:flex;align-items:center;gap:16px;">
+      <div class="lang-toggle">
+        <button class="lang-btn active" onclick="setLang('ko')">KO</button>
+        <button class="lang-btn" onclick="setLang('en')">EN</button>
+      </div>
+      <a class="back-link" href="../">← 홈으로</a>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- 한국어 -->
+    <div data-lang="ko">
+      <h1 class="page-title">개인정보 처리방침</h1>
+      <p class="effective-date">시행일: 2025년 1월 1일</p>
+
+      <div class="intro">
+        (주)롤다(이하 "회사")는 이용자의 개인정보를 중요하게 여기며, 「개인정보 보호법」 등 관련 법령을 준수합니다. 본 방침은 롤다 앱 서비스 이용 시 수집·이용·보관되는 개인정보에 관한 사항을 안내합니다.
+      </div>
+
+      <h2>1. 수집하는 개인정보 항목</h2>
+      <p>회사는 서비스 제공을 위해 다음과 같은 정보를 수집합니다.</p>
+      <ul>
+        <li><strong>계정 정보:</strong> 이메일 주소, 이름, 생년월일, 성별 (회원가입 시)</li>
+        <li><strong>이용 정보:</strong> AI 추천을 위해 입력하신 얼굴형, 이마 타입, 모발 굵기, 스타일 선호도</li>
+        <li><strong>기기 데이터:</strong> 롤다 기기의 블루투스 연결 상태 및 히팅 동작 정보</li>
+        <li><strong>기술 데이터:</strong> 앱 이용 로그, 오류 보고 등 서비스 개선용 정보</li>
+      </ul>
+      <hr class="divider" />
+
+      <h2>2. 개인정보 수집 및 이용 목적</h2>
+      <ul>
+        <li>AI 기반 개인 맞춤 헤어 스타일 추천 서비스 제공</li>
+        <li>블루투스를 통한 롤다 기기 제어 및 모니터링</li>
+        <li>회원 관리 및 본인 확인</li>
+        <li>앱 성능 개선 및 오류 해결</li>
+        <li>고객 지원</li>
+      </ul>
+      <hr class="divider" />
+
+      <h2>3. 블루투스 및 위치 권한 안내</h2>
+      <p>롤다 앱은 헤어 스타일링 기기와 통신하기 위해 블루투스 저전력(BLE)을 사용합니다. Android 운영체제 정책상 블루투스 기기 검색 시 위치 권한이 필요합니다.</p>
+      <p>실제 GPS 위치 정보는 수집하거나 저장하지 않으며, 위치 권한은 오직 주변 롤다 기기 검색 목적으로만 사용됩니다.</p>
+      <hr class="divider" />
+
+      <h2>4. 개인정보 보관 및 파기</h2>
+      <p>수집된 개인정보는 당사 서버(ai.rollda.co.kr)에 안전하게 보관됩니다. 회원 탈퇴 시 요청일로부터 30일 이내에 모든 개인정보를 완전히 삭제합니다. 서비스 개선을 위한 데이터는 개인을 특정할 수 없는 익명 형태로 보관될 수 있습니다.</p>
+      <hr class="divider" />
+
+      <h2>5. 개인정보 제3자 제공</h2>
+      <p>수집된 개인정보는 마케팅 목적으로 제3자에게 판매하거나 공유하지 않습니다. 다음의 경우에 한해 공유될 수 있습니다.</p>
+      <ul>
+        <li>법령 또는 법적 절차에 의해 요구되는 경우</li>
+        <li>이용자의 안전과 권리 보호를 위해 필요한 경우</li>
+        <li>이용자의 명시적 동의가 있는 경우</li>
+      </ul>
+      <hr class="divider" />
+
+      <h2>6. 이용자의 권리</h2>
+      <p>이용자는 다음과 같은 권리를 가집니다.</p>
+      <ul>
+        <li>본인의 개인정보 조회 및 열람</li>
+        <li>부정확한 정보의 수정 요청</li>
+        <li>계정 및 데이터 삭제 요청</li>
+        <li>언제든지 동의 철회</li>
+      </ul>
+      <p>권리 행사를 원하시면 아래 연락처로 문의해 주세요.</p>
+      <hr class="divider" />
+
+      <h2>7. 만 13세 미만 아동 보호</h2>
+      <p>롤다 서비스는 만 13세 이상을 대상으로 합니다. 만 13세 미만 아동의 개인정보는 의도적으로 수집하지 않습니다. 아동이 개인정보를 제공한 사실을 발견하신 경우 즉시 아래 연락처로 알려 주시기 바랍니다.</p>
+      <hr class="divider" />
+
+      <h2>8. 방침 변경 안내</h2>
+      <p>본 개인정보 처리방침은 서비스 변경에 따라 업데이트될 수 있습니다. 중요한 변경 사항은 앱 내 공지를 통해 사전에 안내드립니다.</p>
+    </div>
+
+    <!-- English -->
+    <div data-lang="en">
+      <h1 class="page-title">Privacy Policy</h1>
+      <p class="effective-date">Effective Date: January 1, 2025</p>
+
+      <div class="intro">
+        ROLLDA Co., Ltd. ("Company") values the privacy of our users and complies with applicable data protection laws. This policy explains how we collect, use, and store personal information when you use the ROLLDA app.
+      </div>
+
+      <h2>1. Information We Collect</h2>
+      <p>We collect the following information to provide our services:</p>
+      <ul>
+        <li><strong>Account Info:</strong> Email address, name, date of birth, gender (at sign-up)</li>
+        <li><strong>Usage Data:</strong> Face shape, forehead type, hair texture, style preference entered for AI recommendations</li>
+        <li><strong>Device Data:</strong> Bluetooth connection status and heating operation data from your ROLLDA device</li>
+        <li><strong>Technical Data:</strong> App usage logs and error reports for service improvement</li>
+      </ul>
+      <hr class="divider" />
+
+      <h2>2. How We Use Your Information</h2>
+      <ul>
+        <li>Providing personalized AI hair style recommendations</li>
+        <li>Controlling and monitoring your ROLLDA device via Bluetooth</li>
+        <li>Account management and identity verification</li>
+        <li>App performance improvement and error resolution</li>
+        <li>Customer support</li>
+      </ul>
+      <hr class="divider" />
+
+      <h2>3. Bluetooth &amp; Location Permission</h2>
+      <p>ROLLDA uses Bluetooth Low Energy (BLE) to communicate with your hair styling device. On Android, scanning for Bluetooth devices requires location permission as mandated by the OS.</p>
+      <p>We do not collect or store your actual GPS location. Location permission is used solely for discovering nearby ROLLDA devices.</p>
+      <hr class="divider" />
+
+      <h2>4. Data Storage &amp; Retention</h2>
+      <p>Your data is securely stored on our servers (ai.rollda.co.kr). Upon account deletion, all personal data is permanently removed within 30 days. Usage data may be retained in anonymized form for service improvement.</p>
+      <hr class="divider" />
+
+      <h2>5. Third-Party Sharing</h2>
+      <p>We do not sell or share your personal information with third parties for marketing. Data may be shared only:</p>
+      <ul>
+        <li>When required by law or legal process</li>
+        <li>To protect the safety and rights of users</li>
+        <li>With your explicit consent</li>
+      </ul>
+      <hr class="divider" />
+
+      <h2>6. Your Rights</h2>
+      <p>You have the right to:</p>
+      <ul>
+        <li>Access and review your personal information</li>
+        <li>Request correction of inaccurate data</li>
+        <li>Request deletion of your account and data</li>
+        <li>Withdraw consent at any time</li>
+      </ul>
+      <p>To exercise these rights, please contact us at the email below.</p>
+      <hr class="divider" />
+
+      <h2>7. Children's Privacy</h2>
+      <p>ROLLDA is intended for users aged 13 and older. We do not knowingly collect information from children under 13. If you believe a child has provided personal information, please contact us immediately.</p>
+      <hr class="divider" />
+
+      <h2>8. Policy Updates</h2>
+      <p>This privacy policy may be updated to reflect changes in our service. Significant changes will be notified via the app in advance.</p>
+    </div>
+
+    <!-- 회사 정보 (공통) -->
+    <div class="company-box">
+      <h3>📋 개인정보 처리자 / Data Controller</h3>
+      <p><strong>(주)롤다 / ROLLDA Co., Ltd.</strong></p>
+      <p>이메일 / Email: <a href="mailto:contact@rollda.co.kr">contact@rollda.co.kr</a></p>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025 (주)롤다. All rights reserved. | <a href="../">홈으로</a></p>
+  </footer>
+
+  <script>
+    function setLang(lang) {
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        el.style.display = el.dataset.lang === lang ? 'block' : 'none';
+      });
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.textContent.toLowerCase() === lang);
+      });
+      // 뒤로가기 링크 텍스트도 변경
+      document.querySelector('.back-link').textContent =
+        lang === 'ko' ? '← 홈으로' : '← Home';
+    }
+  </script>
+
+</body>
+</html>

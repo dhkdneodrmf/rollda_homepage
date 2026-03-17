@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>계정 삭제 요청 – ROLLDA</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #333; background: #fff; }
+
+    header {
+      position: sticky; top: 0; background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(8px); border-bottom: 1px solid #eee;
+      padding: 16px 24px; display: flex; align-items: center; justify-content: space-between;
+      z-index: 100;
+    }
+    header a { text-decoration: none; color: #333; font-weight: 700; font-size: 1.1rem; letter-spacing: 1px; }
+    .back-link { font-size: 0.9rem; color: #E89968; font-weight: 500; }
+    .back-link:hover { text-decoration: underline; }
+
+    main { max-width: 780px; margin: 0 auto; padding: 48px 24px 80px; }
+
+    h1 { font-size: 2rem; font-weight: 800; margin-bottom: 8px; }
+    .subtitle { color: #888; font-size: 0.95rem; margin-bottom: 40px; }
+
+    h2 { font-size: 1.15rem; font-weight: 700; margin: 36px 0 12px; color: #222; }
+
+    p { line-height: 1.8; color: #444; margin-bottom: 12px; }
+
+    .card {
+      background: #fff8f4; border: 1px solid #f0d5c0;
+      border-radius: 12px; padding: 28px 32px; margin: 32px 0;
+    }
+    .card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 16px; color: #c97a3a; }
+    .step { display: flex; gap: 16px; margin-bottom: 16px; align-items: flex-start; }
+    .step-num {
+      min-width: 28px; height: 28px; border-radius: 50%;
+      background: #E89968; color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.85rem; font-weight: 700;
+    }
+    .step-text { line-height: 1.7; color: #444; font-size: 0.95rem; }
+    .step-text strong { color: #333; }
+
+    .email-box {
+      background: #fff; border: 2px solid #E89968;
+      border-radius: 8px; padding: 16px 20px;
+      display: flex; align-items: center; gap: 12px; margin: 16px 0;
+    }
+    .email-box a { color: #E89968; font-weight: 700; text-decoration: none; font-size: 1rem; }
+    .email-box a:hover { text-decoration: underline; }
+
+    .notice {
+      background: #f9f9f9; border-left: 4px solid #E89968;
+      border-radius: 0 8px 8px 0; padding: 16px 20px; margin: 24px 0;
+    }
+    .notice p { margin: 0; font-size: 0.9rem; color: #555; }
+
+    ul { padding-left: 20px; color: #444; line-height: 1.9; }
+    ul li { margin-bottom: 4px; }
+
+    hr { border: none; border-top: 1px solid #eee; margin: 40px 0; }
+
+    .lang-section { margin-top: 56px; padding-top: 40px; border-top: 2px dashed #eee; }
+    .lang-label { font-size: 0.8rem; color: #aaa; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 24px; }
+
+    footer {
+      text-align: center; padding: 32px 24px;
+      border-top: 1px solid #eee; color: #aaa; font-size: 0.85rem;
+    }
+    footer a { color: #E89968; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="https://home.rollda.co.kr/">ROLLDA</a>
+  <a href="https://home.rollda.co.kr/" class="back-link">← 홈으로</a>
+</header>
+
+<main>
+  <h1>계정 삭제 요청</h1>
+  <p class="subtitle">Account Deletion Request</p>
+
+  <p>롤다 앱 계정 및 관련 데이터의 삭제를 원하시면 아래 안내에 따라 이메일로 요청해 주세요.</p>
+
+  <div class="card">
+    <h3>📧 삭제 요청 방법</h3>
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-text">아래 이메일 주소로 계정 삭제 요청 메일을 보내주세요.</div>
+    </div>
+    <div class="email-box">
+      <span>✉️</span>
+      <a href="mailto:contact@rollda.co.kr">contact@rollda.co.kr</a>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-text">
+        메일 제목: <strong>[계정 삭제 요청] 롤다 앱</strong><br/>
+        본문에 가입하신 이메일 주소를 포함해 주세요.
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-text">요청 접수 후 <strong>영업일 기준 3일 이내</strong>에 처리 결과를 안내해 드립니다.</div>
+    </div>
+  </div>
+
+  <h2>삭제되는 데이터</h2>
+  <ul>
+    <li>계정 정보 (이메일, 이름, 생년월일, 성별)</li>
+    <li>AI 추천 이용 내역 (얼굴형, 이마 타입, 모발 굵기, 스타일 선호도)</li>
+    <li>앱 이용 기록 및 기기 연결 이력</li>
+    <li>로그인 토큰 및 인증 정보</li>
+  </ul>
+
+  <div class="notice">
+    <p>⚠️ 계정 삭제 후에는 데이터 복구가 불가능하며, 동일 이메일로 재가입 시 기존 데이터는 연결되지 않습니다.<br/>
+    삭제 요청일로부터 <strong>30일 이내</strong>에 모든 개인정보가 완전히 파기됩니다.</p>
+  </div>
+
+  <!-- 영문 섹션 -->
+  <div class="lang-section">
+    <div class="lang-label">English</div>
+
+    <h1 style="font-size:1.6rem;">Account Deletion Request</h1>
+    <br/>
+    <p>To delete your ROLLDA account and associated data, please send us an email using the instructions below.</p>
+
+    <div class="card">
+      <h3>📧 How to Request Deletion</h3>
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-text">Send an email to the address below.</div>
+      </div>
+      <div class="email-box">
+        <span>✉️</span>
+        <a href="mailto:contact@rollda.co.kr">contact@rollda.co.kr</a>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-text">
+          Subject: <strong>[Account Deletion Request] ROLLDA App</strong><br/>
+          Please include your registered email address in the body.
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-text">We will process your request and notify you within <strong>3 business days</strong>.</div>
+      </div>
+    </div>
+
+    <h2>Data That Will Be Deleted</h2>
+    <ul>
+      <li>Account info (email, name, date of birth, gender)</li>
+      <li>AI recommendation history (face shape, forehead type, hair texture, style preference)</li>
+      <li>App usage history and device connection logs</li>
+      <li>Login tokens and authentication data</li>
+    </ul>
+
+    <div class="notice">
+      <p>⚠️ Deleted accounts cannot be recovered. All personal data will be permanently removed within <strong>30 days</strong> of the deletion request.</p>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  © 2025 (주)롤다. All rights reserved. &nbsp;|&nbsp;
+  <a href="https://home.rollda.co.kr/">홈으로</a> &nbsp;|&nbsp;
+  <a href="https://home.rollda.co.kr/privacy/">개인정보처리방침</a>
+</footer>
+
+</body>
+</html>
